@@ -1,0 +1,742 @@
+<?xml version="1.0" ?>
+<robot name="crabot">
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000" />
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="4.124181564349133e-05 -0.0028053662253889875 0.0025" rpy="0 0 0" />
+    <mass value="1.0481126884623189" />
+    <inertia ixx="0.0029774492061843665" iyy="0.0018256539253159831" izz="0.004798735995298423" ixy="-6.497688072846278e-07" iyz="8.470329472543003e-22" ixz="-2.6469779601696886e-23" />
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="yaw_bracket_1">
+  <inertial>
+    <origin xyz="0.013901077882224229 -0.0004883134778711912 -0.0010134056090122612" rpy="0 0 0" />
+    <mass value="0.11550730776472444" />
+    <inertia ixx="3.608444365253011e-05" iyy="2.9382054439589336e-05" izz="2.8439086964837787e-05" ixy="2.545896817048748e-07" iyz="7.303455671891876e-08" ixz="7.206831404403123e-07" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.04605 0.06965 -0.0025" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/yaw_bracket_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.04605 0.06965 -0.0025" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/yaw_bracket_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="LewanSoul_LX-16A_1">
+  <inertial>
+    <origin xyz="0.020468516290673616 0.010499978054753292 -0.017150918733606427" rpy="0 0 0" />
+    <mass value="0.29243906319339347" />
+    <inertia ixx="4.248185540093067e-05" iyy="7.738357465770476e-05" izz="6.325782119020757e-05" ixy="4.213403079125072e-10" iyz="1.4610853014116777e-12" ixz="1.1300300981997006e-06" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.05115 0.080027 -0.0201" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.05115 0.080027 -0.0201" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="yaw_bracket_2">
+  <inertial>
+    <origin xyz="0.013901300246558022 -0.0004883134778712328 -0.0010134056090122551" rpy="0 0 0" />
+    <mass value="0.11550730776472444" />
+    <inertia ixx="3.6084443652529673e-05" iyy="2.9382054439589444e-05" izz="2.843908696483746e-05" ixy="2.545896817048748e-07" iyz="7.303455671890521e-08" ixz="7.206831404402682e-07" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.045462 -0.07035 -0.0025" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/yaw_bracket_2.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.045462 -0.07035 -0.0025" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/yaw_bracket_2.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="LewanSoul_LX-16A_3">
+  <inertial>
+    <origin xyz="0.020468738655008943 -0.010500021945247129 -0.016150918733606818" rpy="0 0 0" />
+    <mass value="0.29243906319339347" />
+    <inertia ixx="4.248185540093566e-05" iyy="7.738357465770476e-05" izz="6.325782119020757e-05" ixy="4.2134030769566677e-10" iyz="1.4610852133202512e-12" ixz="1.1300300982000665e-06" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.050562 -0.080973 -0.0201" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_3.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.050562 -0.080973 -0.0201" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_3.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="yaw_bracket_3">
+  <inertial>
+    <origin xyz="-0.013901300246558147 0.0004883134778712606 -0.0010134056090122612" rpy="0 0 0" />
+    <mass value="0.11550730776472444" />
+    <inertia ixx="3.6084443652530324e-05" iyy="2.938205443958928e-05" izz="2.843908696483757e-05" ixy="2.5458968170471215e-07" iyz="-7.303455671891707e-08" ixz="-7.20683140440314e-07" />
+  </inertial>
+  <visual>
+    <origin xyz="0.045462 -0.06965 -0.0025" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/yaw_bracket_3.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.045462 -0.06965 -0.0025" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/yaw_bracket_3.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="LewanSoul_LX-16A_5">
+  <inertial>
+    <origin xyz="0.004031261344992584 -0.010499978054753167 -0.01615091873360637" rpy="0 0 0" />
+    <mass value="0.29243906319339347" />
+    <inertia ixx="4.2481855400930456e-05" iyy="7.738357465770455e-05" izz="6.3257821190208e-05" ixy="4.213403079125072e-10" iyz="-1.4610852133202512e-12" ixz="-1.1300300981996464e-06" />
+  </inertial>
+  <visual>
+    <origin xyz="0.075062 -0.080027 -0.0201" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_5.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.075062 -0.080027 -0.0201" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_5.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="LewanSoul_LX-16A_7">
+  <inertial>
+    <origin xyz="0.004031483709326433 0.010500021945246171 -0.016150918733606356" rpy="0 0 0" />
+    <mass value="0.29243906319339347" />
+    <inertia ixx="4.248185540093002e-05" iyy="7.738357465770368e-05" izz="6.32578211902067e-05" ixy="4.2134030704514547e-10" iyz="-1.4610852404253055e-12" ixz="-1.13003009819966e-06" />
+  </inertial>
+  <visual>
+    <origin xyz="0.07565 0.080973 -0.0201" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_7.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.07565 0.080973 -0.0201" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_7.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="cover_1">
+  <inertial>
+    <origin xyz="0.0003602733946949943 -0.09954686682707513 0.03478939456584567" rpy="0 0 0" />
+    <mass value="2.8232226830444045" />
+    <inertia ixx="0.009461802420184316" iyy="0.005937248719091306" izz="0.013977997261840824" ixy="2.6433048250614766e-06" iyz="-0.0003488883549940241" ixz="-2.0359536068332952e-05" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.1 -0.005" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/cover_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.1 -0.005" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/cover_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="battery_holder_1">
+  <inertial>
+    <origin xyz="2.0067561243181916e-05 0.006959155711013634 -0.006950407653111441" rpy="0 0 0" />
+    <mass value="0.27287053769703157" />
+    <inertia ixx="0.0004648931909792432" iyy="0.00024817264152699506" izz="0.0006664684016783197" ixy="8.555387657267763e-08" iyz="2.2075029127686182e-05" ixz="-3.548680527972456e-08" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/battery_holder_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/battery_holder_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="yaw_bracket_4">
+  <inertial>
+    <origin xyz="-0.01390107788222427 0.0004883134778708442 -0.0010134056090122614" rpy="0 0 0" />
+    <mass value="0.11550730776472444" />
+    <inertia ixx="3.608444365253011e-05" iyy="2.9382054439589227e-05" izz="2.843908696483757e-05" ixy="2.545896817050916e-07" iyz="-7.303455671893909e-08" ixz="-7.206831404403106e-07" />
+  </inertial>
+  <visual>
+    <origin xyz="0.04605 0.07035 -0.0025" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/yaw_bracket_4.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.04605 0.07035 -0.0025" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/yaw_bracket_4.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="pitch_bracket_3">
+  <inertial>
+    <origin xyz="-0.020118136572652684 -7.67744064584519e-05 -0.014957711105084332" rpy="0 0 0" />
+    <mass value="0.08003460056534491" />
+    <inertia ixx="3.030504145437818e-05" iyy="3.4957685946340484e-05" izz="2.4278329361307298e-05" ixy="-1.7856096311188313e-08" iyz="-6.264179977318496e-08" ixz="5.811439234628692e-06" />
+  </inertial>
+  <visual>
+    <origin xyz="0.08415 0.070473 -0.0223" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/pitch_bracket_3.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.08415 0.070473 -0.0223" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/pitch_bracket_3.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="LewanSoul_LX-16A_6">
+  <inertial>
+    <origin xyz="0.010500139611895581 -0.017151015746498285 -0.020468516290674914" rpy="0 0 0" />
+    <mass value="0.29243906319339347" />
+    <inertia ixx="7.738357465770455e-05" iyy="6.325782119020844e-05" izz="4.248185540093631e-05" ixy="-1.4610860264718806e-12" iyz="-1.1300300982000394e-06" ixz="4.2134030739751117e-10" />
+  </inertial>
+  <visual>
+    <origin xyz="0.12965 0.053063 -0.0232" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_6.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.12965 0.053063 -0.0232" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_6.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="foot_3">
+  <inertial>
+    <origin xyz="-0.04359716146817716 -0.019075914295540834 -0.009508160643561518" rpy="0 0 0" />
+    <mass value="0.37723462622190446" />
+    <inertia ixx="0.0001200521074466443" iyy="0.0002068453117111107" izz="0.00018810394704614312" ixy="1.3441323522093984e-08" iyz="2.931435447140439e-09" ixz="-7.834666573132355e-05" />
+  </inertial>
+  <visual>
+    <origin xyz="0.11915 0.051863 0.0098" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/foot_3.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.11915 0.051863 0.0098" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/foot_3.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="pitch_bracket_4">
+  <inertial>
+    <origin xyz="-0.020118358936986616 -7.677440645699474e-05 -0.014957711105084289" rpy="0 0 0" />
+    <mass value="0.08003460056534491" />
+    <inertia ixx="3.0305041454378127e-05" iyy="3.495768594634027e-05" izz="2.4278329361306864e-05" ixy="-1.7856096310971473e-08" iyz="-6.264179977334081e-08" ixz="5.811439234628679e-06" />
+  </inertial>
+  <visual>
+    <origin xyz="0.083562 -0.069527 -0.0223" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/pitch_bracket_4.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.083562 -0.069527 -0.0223" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/pitch_bracket_4.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="LewanSoul_LX-16A_8">
+  <inertial>
+    <origin xyz="0.01049991724756319 -0.01715101574649551 -0.02046851629067485" rpy="0 0 0" />
+    <mass value="0.29243906319339347" />
+    <inertia ixx="7.738357465770455e-05" iyy="6.32578211902067e-05" izz="4.2481855400935443e-05" ixy="-1.4610847254292736e-12" iyz="-1.1300300982000394e-06" ixz="4.213403074652738e-10" />
+  </inertial>
+  <visual>
+    <origin xyz="0.129062 -0.086937 -0.0232" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_8.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.129062 -0.086937 -0.0232" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_8.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="foot_4">
+  <inertial>
+    <origin xyz="-0.04359738383251649 -0.019075914295524868 -0.00950816064356147" rpy="0 0 0" />
+    <mass value="0.37723462622190446" />
+    <inertia ixx="0.00012005210744664321" iyy="0.0002068453117111107" izz="0.00018810394704614486" ixy="1.3441323550716922e-08" iyz="2.9314354709928866e-09" ixz="-7.834666573132355e-05" />
+  </inertial>
+  <visual>
+    <origin xyz="0.118562 -0.088137 0.0098" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/foot_4.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="0.118562 -0.088137 0.0098" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/foot_4.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="LewanSoul_LX-16A_2">
+  <inertial>
+    <origin xyz="-0.01050013961189969 0.017151015746496037 -0.020468516290673772" rpy="0 0 0" />
+    <mass value="0.29243906319339347" />
+    <inertia ixx="7.738357465770476e-05" iyy="6.325782119020757e-05" izz="4.248185540092937e-05" ixy="-1.4610851591101426e-12" iyz="1.1300300981996396e-06" ixz="-4.213403074313925e-10" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.12965 0.086937 -0.0222" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_2.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.12965 0.086937 -0.0222" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_2.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="foot_1">
+  <inertial>
+    <origin xyz="0.0435971614681763 0.019075914295533472 -0.00950816064355969" rpy="0 0 0" />
+    <mass value="0.37723462622190446" />
+    <inertia ixx="0.00012005210744664386" iyy="0.0002068453117111159" izz="0.00018810394704614312" ixy="1.344132353510441e-08" iyz="-2.9314354576572e-09" ixz="7.834666573132355e-05" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.11915 0.088137 0.0108" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/foot_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.11915 0.088137 0.0108" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/foot_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="pitch_bracket_2">
+  <inertial>
+    <origin xyz="0.020118358936988934 7.677440645662004e-05 -0.014957711105084084" rpy="0 0 0" />
+    <mass value="0.08003460056534491" />
+    <inertia ixx="3.0305041454378018e-05" iyy="3.4957685946340484e-05" izz="2.427832936130708e-05" ixy="-1.7856096310863052e-08" iyz="6.264179977333404e-08" ixz="-5.811439234628692e-06" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.083562 -0.070473 -0.0223" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/pitch_bracket_2.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.083562 -0.070473 -0.0223" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/pitch_bracket_2.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="LewanSoul_LX-16A_4">
+  <inertial>
+    <origin xyz="-0.010499917247560872 0.017151015746495232 -0.020468516290674654" rpy="0 0 0" />
+    <mass value="0.29243906319339347" />
+    <inertia ixx="7.738357465770455e-05" iyy="6.325782119020757e-05" izz="4.248185540093631e-05" ixy="-1.4610847254292736e-12" iyz="1.1300300982000462e-06" ixz="-4.2134030742461623e-10" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.129062 -0.053063 -0.0232" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_4.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.129062 -0.053063 -0.0232" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/LewanSoul_LX-16A_4.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="foot_2">
+  <inertial>
+    <origin xyz="0.04359738383251513 0.019075914295532327 -0.009508160643561237" rpy="0 0 0" />
+    <mass value="0.37723462622190446" />
+    <inertia ixx="0.000120052107446643" iyy="0.00020684531171110895" izz="0.00018810394704613966" ixy="1.344132353510441e-08" iyz="-2.9314354570066786e-09" ixz="7.834666573132334e-05" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.118562 -0.051863 0.0098" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/foot_2.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.118562 -0.051863 0.0098" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/foot_2.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="pitch_bracket_1">
+  <inertial>
+    <origin xyz="0.02011813657265142 7.677440645709188e-05 -0.014957711105084016" rpy="0 0 0" />
+    <mass value="0.08003460056534491" />
+    <inertia ixx="3.0305041454373627e-05" iyy="3.4957685946338315e-05" izz="2.427832936130578e-05" ixy="-1.7856096311079893e-08" iyz="6.264179977336114e-08" ixz="-5.811439234628123e-06" />
+  </inertial>
+  <visual>
+    <origin xyz="-0.08415 0.069527 -0.0213" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/pitch_bracket_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="silver" />
+    <material />
+  </visual>
+  <collision>
+    <origin xyz="-0.08415 0.069527 -0.0213" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="meshes/pitch_bracket_1.stl" scale="0.001 0.001 0.001" />
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 1" type="fixed">
+  <origin xyz="0.04605 -0.06965 0.0025" rpy="0 0 0" />
+  <parent link="base_link" />
+  <child link="yaw_bracket_1" />
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="0.0051 -0.010377 0.0176" rpy="0 0 0" />
+  <parent link="yaw_bracket_1" />
+  <child link="LewanSoul_LX-16A_1" />
+</joint>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="0.045462 0.07035 0.0025" rpy="0 0 0" />
+  <parent link="base_link" />
+  <child link="yaw_bracket_2" />
+</joint>
+
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="0.0051 0.010623 0.0176" rpy="0 0 0" />
+  <parent link="yaw_bracket_2" />
+  <child link="LewanSoul_LX-16A_3" />
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="-0.045462 0.06965 0.0025" rpy="0 0 0" />
+  <parent link="base_link" />
+  <child link="yaw_bracket_3" />
+</joint>
+
+<joint name="Rigid 15" type="fixed">
+  <origin xyz="-0.0296 0.010377 0.0176" rpy="0 0 0" />
+  <parent link="yaw_bracket_3" />
+  <child link="LewanSoul_LX-16A_5" />
+</joint>
+
+<joint name="Rigid 20" type="fixed">
+  <origin xyz="-0.0296 -0.010623 0.0176" rpy="0 0 0" />
+  <parent link="yaw_bracket_4" />
+  <child link="LewanSoul_LX-16A_7" />
+</joint>
+
+<joint name="Rigid 24" type="fixed">
+  <origin xyz="0.0 0.1 0.005" rpy="0 0 0" />
+  <parent link="base_link" />
+  <child link="cover_1" />
+</joint>
+
+<joint name="Rigid 25" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+  <parent link="base_link" />
+  <child link="battery_holder_1" />
+</joint>
+
+<joint name="Rigid 35" type="fixed">
+  <origin xyz="-0.04605 -0.07035 0.0025" rpy="0 0 0" />
+  <parent link="base_link" />
+  <child link="yaw_bracket_4" />
+</joint>
+
+<joint name="Revolute 36" type="revolute">
+  <origin xyz="-0.0085 0.0105 0.0022" rpy="0 0 0" />
+  <parent link="LewanSoul_LX-16A_7" />
+  <child link="pitch_bracket_3" />
+  <axis xyz="-0.0 -0.0 -1.0" />
+  <limit upper="0.872665" lower="-0.872665" effort="100" velocity="100" />
+</joint>
+<transmission name="Revolute 36_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 36">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 36_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rigid 37" type="fixed">
+  <origin xyz="-0.0455 0.01741 0.0009" rpy="0 0 0" />
+  <parent link="pitch_bracket_3" />
+  <child link="LewanSoul_LX-16A_6" />
+</joint>
+
+<joint name="Revolute 38" type="revolute">
+  <origin xyz="0.0105 0.0012 -0.033" rpy="0 0 0" />
+  <parent link="LewanSoul_LX-16A_6" />
+  <child link="foot_3" />
+  <axis xyz="-0.0 -1.0 -0.0" />
+  <limit upper="1.570796" lower="-0.349066" effort="100" velocity="100" />
+</joint>
+<transmission name="Revolute 38_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 38">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 38_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute 39" type="revolute">
+  <origin xyz="-0.0085 -0.0105 0.0022" rpy="0 0 0" />
+  <parent link="LewanSoul_LX-16A_5" />
+  <child link="pitch_bracket_4" />
+  <axis xyz="-0.0 -0.0 -1.0" />
+  <limit upper="0.872665" lower="-0.872665" effort="100" velocity="100" />
+</joint>
+<transmission name="Revolute 39_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 39">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 39_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rigid 40" type="fixed">
+  <origin xyz="-0.0455 0.01741 0.0009" rpy="0 0 0" />
+  <parent link="pitch_bracket_4" />
+  <child link="LewanSoul_LX-16A_8" />
+</joint>
+
+<joint name="Revolute 41" type="revolute">
+  <origin xyz="0.0105 0.0012 -0.033" rpy="0 0 0" />
+  <parent link="LewanSoul_LX-16A_8" />
+  <child link="foot_4" />
+  <axis xyz="0.0 -1.0 -0.0" />
+  <limit upper="1.570796" lower="-0.174533" effort="100" velocity="100" />
+</joint>
+<transmission name="Revolute 41_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 41">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 41_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rigid 43" type="fixed">
+  <origin xyz="0.0455 -0.01741 0.0009" rpy="0 0 0" />
+  <parent link="pitch_bracket_1" />
+  <child link="LewanSoul_LX-16A_2" />
+</joint>
+
+<joint name="Revolute 44" type="revolute">
+  <origin xyz="-0.0105 -0.0012 -0.033" rpy="0 0 0" />
+  <parent link="LewanSoul_LX-16A_2" />
+  <child link="foot_1" />
+  <axis xyz="0.0 1.0 -0.0" />
+  <limit upper="1.570796" lower="-0.174533" effort="100" velocity="100" />
+</joint>
+<transmission name="Revolute 44_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 44">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 44_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute 45" type="revolute">
+  <origin xyz="0.033 -0.0105 0.0022" rpy="0 0 0" />
+  <parent link="LewanSoul_LX-16A_3" />
+  <child link="pitch_bracket_2" />
+  <axis xyz="0.0 0.0 -1.0" />
+  <limit upper="0.872665" lower="-0.872665" effort="100" velocity="100" />
+</joint>
+<transmission name="Revolute 45_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 45">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 45_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rigid 46" type="fixed">
+  <origin xyz="0.0455 -0.01741 0.0009" rpy="0 0 0" />
+  <parent link="pitch_bracket_2" />
+  <child link="LewanSoul_LX-16A_4" />
+</joint>
+
+<joint name="Revolute 47" type="revolute">
+  <origin xyz="-0.0105 -0.0012 -0.033" rpy="0 0 0" />
+  <parent link="LewanSoul_LX-16A_4" />
+  <child link="foot_2" />
+  <axis xyz="-0.0 1.0 -0.0" />
+  <limit upper="1.570796" lower="-0.174533" effort="100" velocity="100" />
+</joint>
+<transmission name="Revolute 47_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 47">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 47_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute 48" type="revolute">
+  <origin xyz="0.033 0.0105 0.0012" rpy="0 0 0" />
+  <parent link="LewanSoul_LX-16A_1" />
+  <child link="pitch_bracket_1" />
+  <axis xyz="-0.0 0.0 -1.0" />
+  <limit upper="0.872665" lower="-0.872665" effort="100" velocity="100" />
+</joint>
+<transmission name="Revolute 48_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 48">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 48_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
